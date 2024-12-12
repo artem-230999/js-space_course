@@ -174,12 +174,16 @@ console.log(`${prom1} перетворилося на ${prom1Bol}`);
 - вивести цю змінну в консоль
 
 Після виконання можна закоментувати код задачі, щоб не заважав виконувати наступне завдання.
-*/
 const prom1 = prompt('Your name?', '');
 const prom2 = prompt('Your second name?', '');
-const prom1FirstLetter = ;
-const prom2FirstLetter = ;
-const userName = `${prom1} ${prom2}`;
+const prom1LastLetterBig = prom1[prom1.length - 1].toUpperCase();
+const prom2LastLetterBig = prom2[prom2.length - 1].toUpperCase();
+// console.log(prom1LastLetterBig, prom2LastLetterBig);
+const res = `${prom1LastLetterBig}${prom1.slice(1)} ${prom2LastLetterBig}${prom2.slice(1)}`;
+
+console.log(res);
+*/
+
 
 /* --- 03 ---
 Створити дві змінних, присвоїти їм функції prompt() для отримання даних зі сторінки. Дані мають конвертуватися в число на момент отримання.
@@ -187,7 +191,12 @@ const userName = `${prom1} ${prom2}`;
 - вивести в консоль повідомлення типу '__ плюс __ дорівнює __', де замість першого і другого пропуску мають бути дані, отримані з promptів, а замість останнього результат складання цих даних.
 
 - вивести в консоль ще три різних повідомлення за аналогією на дії "мінус", "помножити" та "поділити"
+const promNum1 = +prompt('Введіть перше число', '');
+const promNum2 = +prompt('Введіть друге число', '');
+
+console.log(`${promNum1} плюс ${promNum2} дорівнює ${promNum1 + promNum2}`);
+console.log(`${promNum1} мінус ${promNum2} дорівнює ${promNum1 - promNum2}`);
+console.log(`${promNum1} помножити на ${promNum2} дорівнює ${promNum1 * promNum2}`);
+console.log(`${promNum1} поділити на ${promNum2} дорівнює ${promNum1 / promNum2}`);
 */
-
-
 
